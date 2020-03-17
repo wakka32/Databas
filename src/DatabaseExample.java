@@ -18,7 +18,7 @@ public class DatabaseExample {
             // Setup statement
             Statement stmt = conn.createStatement();
             // Create query and execute
-            String strSelect = "select body from story";
+            String strSelect = "select body from story where id = 1";
             System.out.println("The SQL statement is: " + strSelect + "\n");
 
             ResultSet rset = stmt.executeQuery(strSelect);
@@ -28,7 +28,7 @@ public class DatabaseExample {
             System.out.println("The records selected are:");
             int rowCount = 0;
             while(rset.next()) {
-                String body = rset.getString("body");
+                String body = rset.getString("body"); 
 
                 System.out.println(body );
                 ++rowCount;
