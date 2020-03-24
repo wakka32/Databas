@@ -15,6 +15,7 @@ public class DatabaseExample {
                             "? allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                     DatabaseLoginData.user, DatabaseLoginData.password);
 
+
             // Setup statement
             Statement stmt = conn.createStatement();
             // Create query and execute
