@@ -37,6 +37,7 @@ public class SoloView extends JFrame {
     public void setCalcSolution(int solution) {
         calcSolution.setText(Integer.toString(solution));
     }
+    public void setbody(String solution) {calcSolution.setText(solution);}
 
     // If the calculateButton is clicked execute a method
     // in the Controller named actionPerformed

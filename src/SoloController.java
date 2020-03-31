@@ -26,7 +26,7 @@ public class SoloController {
                 firstNumber = theView.getFirstNumber();
                 secondNumber = theView.getSecondNumber();
                 theModel.addTwoNumbers(firstNumber, secondNumber);
-                theView.setCalcSolution(theModel.getSoloValue());
+                theView.setbody(theModel.getBody());
             }
             catch(NumberFormatException ex){
                 System.out.println(ex);
